@@ -1,8 +1,9 @@
-use std::fs::{File, OpenOptions};
+#![feature(map_first_last)]
+#![feature(assert_matches)]
 
 use error::Result;
-use storage::disk::{DefaultDiskManager, DiskManager, PageId};
 
+mod buffer;
 mod error;
 mod storage;
 
